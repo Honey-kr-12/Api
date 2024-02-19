@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+body{
+    /* background-color: rgb(213, 207, 207); */
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(164,71,252,1) 9%, rgba(170,70,252,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%, rgba(2,0,36,1) 100%);
+     margin: 100px 0 0 85px;
+    position: relative;
+    align-items: center;
+    gap: 200px;
+    width: 900px;
+    height: 382px;
+    border: 5px solid black;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.next-cont{
+    position: absolute;
+    top: 100px;
+    left: 340px;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    margin: 40px 0 10px 40px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+span {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background: radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 90px 0 26px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.lastName{
+    align-self: flex-start;
+    margin: 100px 0 0 85px;
+}
+
+.firstName{
+    position: absolute;
+}
+
+.phone{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px 0 0 0px;
+    background: radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .btn-grad:hover {
+    background-position: right; 
+    color: #fff;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
